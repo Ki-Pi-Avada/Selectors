@@ -29,7 +29,8 @@ public class OrderCardTest {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
-        //options.addArguments("--headless");
+        options.addArguments("--headless=new");
+        options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
         driver.get("http://localhost:9999/");
     }
